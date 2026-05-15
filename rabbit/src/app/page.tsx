@@ -10,7 +10,7 @@ export default function Home() {
     <main className="casino-bg min-h-screen flex flex-col items-center justify-center gap-8">
       <div className="text-center select-none">
         <h1 className="casino-title text-5xl font-bold tracking-widest mb-2">
-          🎰 CASINO ROULETTE
+          🎰 카지노 룰렛
         </h1>
         <p className="casino-subtitle text-lg tracking-wider">
           행운을 시험해 보세요
