@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+:root {
+  --gold: #f1c40f;
+  --gold-dark: #b8860b;
+  --casino-green: #1a472a;
+  --casino-dark: #0d2b1a;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, serif;
+}
+
+/* Casino felt background */
+.casino-bg {
+  background-color: #0d2b1a;
+  background-image:
+    radial-gradient(ellipse at 20% 20%, #1a472a 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 80%, #1a472a 0%, transparent 60%),
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 10px,
+      rgba(255,255,255,0.015) 10px,
+      rgba(255,255,255,0.015) 11px
+    );
+}
+
+/* Casino title */
+.casino-title {
+  color: #f1c40f;
+  font-family: Georgia, serif;
+  text-shadow:
+    0 0 20px #f1c40faa,
+    0 0 40px #f1c40f55,
+    0 2px 4px #000;
+  letter-spacing: 0.15em;
+}
+
+.casino-subtitle {
+  color: #f1c40faa;
+  font-family: Georgia, serif;
+  text-shadow: 0 0 10px #f1c40f55;
+  letter-spacing: 0.3em;
+}
+
+/* Open roulette button */
+.open-btn {
+  background: linear-gradient(135deg, #f1c40f 0%, #e67e22 50%, #f1c40f 100%);
+  color: #1a1a1a;
+  border: 2px solid #b8860b;
+  font-family: Georgia, serif;
+  box-shadow:
+    0 0 30px #f1c40f66,
+    0 6px 24px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+.open-btn:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow:
+    0 0 50px #f1c40faa,
+    0 10px 30px rgba(0, 0, 0, 0.7);
+}
+
+.open-btn:active {
+  transform: translateY(1px) scale(0.98);
+}
+
+/* Scrollbar styling for config panel */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #111;
+}
+::-webkit-scrollbar-thumb {
+  background: #b8860b;
+  border-radius: 3px;
+}
